@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Антикафе «Кошачьи истории» – это уютное заведение, где можно насладиться чашечкой ароматного кофе или другими напитками в приятной атмосфере в окружении милых кошечек.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <title>Кошачьи истории - Наше кото - меню</title>
+</head>
+
+<body>
+    <section class="main">
+        <header class="main__header container">
+            <div class="main__header-information">
+                <p class="main__header-information-paragraph">г. Краснодар</p>
+                <a href="index.html" class="main__header-information-logo"><img src="icon/header-logo.svg" alt="#"></a>
+                <a href="tel:+79385327702" class="main__header-information-link">+7 (938) 532-77-02</a>
+            </div>
+            <div class="main__header-navigation">
+                <a href="index.html">Главная</a>
+                <a href="index.html">Тарифы</a>
+                <a href="menu.html">Меню</a>
+                <a href="cats.html">Котики</a>
+                <a href="merch.html">Мерч</a>
+                <a href="index.html">Контакты</a>
+            </div>
+        </header>
+        <div class="main__information container">
+            <h1 class="main__information-title">Антикафе<br>“Кошачьи истории”</h1>
+            <p class="main__information-paragraph">Проведи время за чашечкой кофе в компании<br>наших прелестных
+                котиков</p>
+            <img src="icon/header-lapa.svg" alt="#" class="main__information-icon">
+            <img src="img/header-cat.png" alt="#" class="main__information-image">
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slider__ticker">
+            <div class="slider__ticker-wrapper">
+                <div class="slider__ticker-item">
+                    <div class="slider__ticker-item-card">
+                        <p>ЕШЬ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ПЕЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ИГРАЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ЛЮБИ</p>
+                    </div>
+                </div>
+                <div class="slider__ticker-item">
+                    <div class="slider__ticker-item-card">
+                        <p>ЕШЬ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ПЕЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ИГРАЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ЛЮБИ</p>
+                    </div>
+                </div>
+                <div class="slider__ticker-item">
+                    <div class="slider__ticker-item-card">
+                        <p>ЕШЬ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ПЕЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ИГРАЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ЛЮБИ</p>
+                    </div>
+                </div>
+                <div class="slider__ticker-item">
+                    <div class="slider__ticker-item-card">
+                        <p>ЕШЬ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ПЕЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ИГРАЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ЛЮБИ</p>
+                    </div>
+                </div>
+                <div class="slider__ticker-item">
+                    <div class="slider__ticker-item-card">
+                        <p>ЕШЬ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ПЕЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ИГРАЙ</p>
+                    </div>
+                    <div class="slider__ticker-item-card">
+                        <p>ЛЮБИ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu container">
+        <h2 class="title">Наше кото - меню</h2>
+        <div class="menu__button">
+            <button class="menu__button-content btn-all" onclick="showAllContent()" title=""><span class="tooltip">Всё
+                    меню</span></button>
+            <button class="menu__button-content btn-bread" onclick="filterContent('bread')"><span
+                    class="tooltip">Хлеб</span></button>
+            <button class="menu__button-content btn-croissant" onclick="filterContent('croissant')"><span
+                    class="tooltip">Круассаны</span></button>
+            <button class="menu__button-content btn-hot" onclick="filterContent('hot')"><span
+                    class="tooltip">Горячее</span></button>
+            <button class="menu__button-content btn-cold" onclick="filterContent('cold')"><span
+                    class="tooltip">Холодное</span></button>
+        </div>
+        <div class="menu__content" id="bread">
+            <h3>Десертный хлеб</h3>
+            <div class="menu__content-cards">
+                <div class="menu__content-cards-card">
+                    <img src="img/bread1.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Лимон»</p>
+                        <p>Мука, лимон</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread2.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Черника»</p>
+                        <p>Мука, черника</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread3.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Лайм-мята»</p>
+                        <p>Мука, лайм, мята</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread4.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Малина»</p>
+                        <p>Мука, малина</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread5.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Осень»</p>
+                        <p>Мука, овёс, краситель</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread6.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Весна»</p>
+                        <p>Мука, лайм, малина</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread7.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Карамель»</p>
+                        <p>Мука, карамель</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread8.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Шоколад»</p>
+                        <p>Мука, шоколад</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread9.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Фисташка»</p>
+                        <p>Мука, фисташка</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread10.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Пирог «Земляника»</p>
+                        <p>Мука, земляника</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread11.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Чизкейк «Котик»</p>
+                        <p>Мука, сахар, крем</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread12.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Зебра»</p>
+                        <p>Мука, шоколад</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread13.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Матча»</p>
+                        <p>Мука, матча</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread14.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Хлеб «Лягушка»</p>
+                        <p>Мука, лайм, лимон</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread15.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Кекс «Шоколад»</p>
+                        <p>Мука, шоколад</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/bread16.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Кекс «Ваниль»</p>
+                        <p>Мука, ваниль</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__content" id="croissant">
+            <h3>Круассаны</h3>
+            <div class="menu__content-cards">
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant1.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Классика»</p>
+                        <p>Мука, молоко</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant2.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Земляника»</p>
+                        <p>Мука, земляника</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant3.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Фисташка»</p>
+                        <p>Мука, фисташка, орехи</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant4.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Орехи»</p>
+                        <p>Мука, шоколад, орехи</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant5.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Черника»</p>
+                        <p>Мука, черника</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant6.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Манго-матча»</p>
+                        <p>Мука, манго, матча</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant7.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Шоколад»</p>
+                        <p>Мука, шоколад</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant8.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Дениш «Голубика»</p>
+                        <p>Мука, голубика</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant9.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Фисташка»</p>
+                        <p>Мука, фисташка</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant10.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Клубника»</p>
+                        <p>Мука, клубника</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant11.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Малина»</p>
+                        <p>Мука, малина</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/croissant12.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Круассан «Ягоды»</p>
+                        <p>Мука, ягоды</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__content" id="hot">
+            <h3>Кофе</h3>
+            <div class="menu__content-cards">
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee1.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте<br>фундук-малина</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee2.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Ягодный дрим-крим</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee3.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Прянный айс латте</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee4.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте<br>с розовой пенкоой</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee5.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте мята-чиа<br>с кокосовым муссом</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee6.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Айс латте малина-чиа<br>с кокосовым муссом</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee7.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Айс латте малина<br>с кокосовым муссом</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee8.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте мята<br>с кокосовым муссом</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee9.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте эрл грей</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee10.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Пряный латте</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee11.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Айс мокко<br>малиновый</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/coffee12.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте лимонный<br>пирог с сырной пенкой</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__content" id="hot">
+            <h3>Чай</h3>
+            <div class="menu__content-cards">
+                <div class="menu__content-cards-card">
+                    <img src="img/tea1.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Фильтр<br>гибискус-барбарис</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/tea2.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Чай<br>облепиха-груша</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/tea3.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Чай<br>брусника-клюква</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/tea4.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Чай<br>гибискус-барбарис</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/tea5.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Матча латте<br>цветущий апельсин</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/tea6.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Айс матча латте<br>цветущий апельсин</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/tea7.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Матча латте миндаль<br>с пудрой из роз</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/tea8.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Матча латте айс<br>малина-личи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__content" id="cold">
+            <h3>Напитки</h3>
+            <div class="menu__content-cards">
+                <div class="menu__content-cards-card">
+                    <img src="img/drink1.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Лимонад<br>ягодный сорбет</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink2.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Айс фильтр</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink3.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Глинтвейн<br>барбарис-какао</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink4.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте айс<br>мусковадо-роза</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink5.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Матча тоник</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink6.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Бамбл Матча</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink7.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Лимонад<br>огурец-цитрус</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink8.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Айс ти<br>ромашка-апельсин</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink9.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Лимонад<br>базилик-маракуйя</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink10.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Лимонад<br>анчан-имбирь</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink11.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Коктейль с сырной<br>пенкой и попкорном</p>
+                    </div>
+                </div>
+                <div class="menu__content-cards-card">
+                    <img src="img/drink12.png" alt="#">
+                    <div class="menu__content-cards-card-bg">
+                        <p>Латте айс<br>с колечками </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content-info">
+            <div class="footer__content container">
+                <div class="footer__content-link">
+                    <a href="index.html">Главная</a>
+                    <a href="index.html">Тарифы</a>
+                </div>
+                <div class="footer__content-link">
+                    <a href="cats.html">Котики</a>
+                    <a href="index.html">Контакты</a>
+                </div>
+                <img src="icon/header-logo.svg" alt="#">
+                <div class="footer__content-link">
+                    <a href="menu.html">Меню</a>
+                    <a href="merch.html">Мерч</a>
+                </div>
+                <div class="footer__content-link">
+                    <a href="#">г. Краснодар</a>
+                    <a href="tel:+79385327702">+7 (938) 532-77-02</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyrating">© ИП «Кошачьи истории», 2024</div>
+    </footer>
+
+    <button id="scrollToTopBtn"></button>
+
+    <script src="js/filter-menu.js"></script>
+    <script src="js/top.js"></script>
+</body>
+
+</html>
